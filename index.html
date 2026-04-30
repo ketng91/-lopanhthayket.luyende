@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khoá Tổng Ôn - Lớp Anh thầy Kết</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #EA7B7B;
+  color: #FCF8F8;
+  padding: 30px 15px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.toc-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  text-align: left;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.toc-header {
+  font-weight: bold;
+  background: #ffe5d9;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;        /* căn giữa ngang */
+}
+
+.toc-header div {
+  display: flex;
+  justify-content: center;   /* căn giữa ngang */
+  align-items: center;       /* căn giữa dọc */
+}
+
+
+.toc-container h2 {
+  text-align: center;
+  color: #7a4e3e;
+  margin-bottom: 20px;
+}
+
+.toc-item {
+  display: grid;
+  grid-template-columns: 2.5fr 1.2fr 2fr 1.2fr 1.2fr;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+  transition: 0.2s;
+}
+
+.toc-item:hover {
+  transform: translateX(3px);
+}
+
+/* làm sáng toàn bộ các ô khi hover */
+.toc-item:hover .lesson-link,
+.toc-item:hover .study-session,
+.toc-item:hover .study-time,
+.toc-item:hover .video-link {
+  background: #fdffb6;
+}
+
+
+/* LIST */
+.toc-list {
+  list-style: none;
+  padding: 0;
+  font-size: 17px;
+}
+
+/* GRID TABLE */
+.toc-item {
+  display: grid;
+  grid-template-columns: 2.5fr 1.2fr 2fr 1.2fr 1.2fr;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* HEADER ROW */
+.toc-header {
+  font-weight: bold;
+  background: #ffe5d9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* COLUMNS */
+.lesson-link {
+  text-decoration: none;
+  color: #3a3a3a;
+  background: #a0e7e5;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.study-session {
+  background: #ffe0ac;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.study-time {
+  background: #ffd6e0;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.video-link {
+  text-align: center;
+  background: #ffd6a5;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.video-link:hover {
+  background: #fdffb6;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ffb3ba;
+  color: #3a3a3a;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #fff0e1;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .toc-item {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  Luyện thi THPTQG - Lớp Anh thầy Kết
+</header>
+
+<div class="toc-container">
+  <h2>📚 Lịch luyện thi THPTQG</h2>
+
+  <ul class="toc-list">
+
+    <!-- HEADER -->
+    <li class="toc-item toc-header">
+      <div>File đề thi</div>
+      <div>Ca học</div>
+      <div>Thời gian</div>
+      <div>Bài giảng 1</div>
+      <div>Bài giảng 2</div>
+    </li>
+
+    <!-- ROW 1 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQDNcz1eUS_uRpYsz6xy0ijyAVYeITCYn5Luv_T7rGbXLV4?e=UXSZ8H" target="_blank">1. Đề Ninh Bình</a>
+      <div class="study-session">Ca chiều 1</div>
+      <div class="study-time">T7 18/4<br>1:45-3:15 pm</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDpnZGYdwmuRp_qPO46gzk3ATRdw1xNf9L_08ZkLZwJcxE?e=M16bcp">Video 1</a>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQBa3M0XDeBgR7dcPRm7QESDAZeA2kCn6uXs21vKy7oSwmU?e=GNE4k9">Video 2</a>
+    </li>
+
+    <!-- ROW 2 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQAEo0cSI0VpRKBpaa0ACFBTAQY0ximhGz7UtDtkKQrKcm8?e=oYQRmP" target="_blank">2. Đề Hưng Yên</a>
+      <div class="study-session">Ca chiều 1</div>
+      <div class="study-time">T4 22/4<br>1:45-3:15 pm</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQD8xF2RKzWATI9lvBXaaN-8ASEAghAqw9jdwGXXA4CH5eE?e=iDvyb6">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+
+    <!-- ROW 3 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQACygTAp3s5QL6Q4XLTQEjxAXUn8ejN-h3U_HPjsBeUAxQ?e=SaGIad" target="_blank">3. Đề Thanh Hoá</a>
+      <div class="study-session">Ca chiều 1</div>
+      <div class="study-time">T7 25/4<br>1:45-3:15 pm</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQCfmQdhCsSLQrSTsV_4Xk5hATPcQUpYx6m70n8lXr6rfsQ?e=JbZxbY">Video 1</a>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQAt_DLUs85_RZmJ0_wRejboAaViJf7S6RQgLpFOQzJWom8?e=sh1Rdc">Video 2</a>
+    </li>
+
+    <!-- ROW 4 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQCPYa6wnu92TpmiYQnH5tYqAT3vlYskJtu3ZVFKoZK1wUA?e=W5ChQH" target="_blank">4. Đề Nghệ An</a>
+      <div class="study-session">Ca chiều 2</div>
+      <div class="study-time">T2<br>3:30-5:00 pm</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQBGAH74JowISYADi9_OJnfWARedFDxE28zJfkCatuxAY1Y?e=Uw2ale">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+
+    <!-- ROW 5 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQBXWtRYxM7PRbkLqqSMNr1_AZYbs7ozfyp2fy9VnaNkCWI?e=pSwiEt" target="_blank">5. Đề Hải Phòng</a>
+      <div class="study-session">Ca chiều 1</div>
+      <div class="study-time">T2 20/4<br>1:45-3:15 pm</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQD4d_xBaeEVTJqFNelrtGsmAX9K08gaJwYnefJ_WcjZ7I4?e=rhwQW9">Video 1</a>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQAtdeiTXf7nTokmFG9asCDRAZfAhdZU0pCn4vHjEit1eS0?e=jgSNam">Video 2</a>
+    </li>
+
+    <!-- ROW 6 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQBlgQ9GHIP5SK-Qsf2SkgLSAfcZ_-K4jxOUJ2XMwSlyvTo?e=AYW4ZA" target="_blank">Live Bổ trợ: MĐQH 1</a>
+      <div class="study-session">Ca trưa</div>
+      <div class="study-time">T7 25/4<br>12:05</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQAuEhyJmmYsTIKsWK1acf-RATsh0gr5RB6DNS0yk7oN58k?e=GIHktk">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+
+
+    <!-- ROW 7 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQBZz0NmllUsRZaoV_Mix4keAX6RgNhNVtgqkjkWEbLUdzI?e=OThZ46" target="_blank">Live Bổ trợ: MĐQH 2</a>
+      <div class="study-session">Ca sáng 2</div>
+      <div class="study-time">CN 26/4<br>10:00</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDwdvZVyGMYRIKpMlcYChMsAaWH2L2dPR8rxXeI0zi74xU?e=0h9dzc">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+
+    <!-- ROW 6 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQA4MjTLUERkQ411R-G8MLMMAaPhNpIb2GNF8MjOwB6xweg?e=AoZDAm" target="_blank">6. Đề Đà Nẵng</a>
+      <div class="study-session">Ca chiều 1</div>
+      <div class="study-time">CN 26/4<br>1:45-3:15 pm</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDjZ2mD96FsSKLWarn-4dOXAXKQbnjJDvODxuhgl9eAz1Y?e=NWZ1EU">Video 1</a>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQAXh6HeLl2sS41eYIsOlmkkASNBJ0iI_L_3_v4NI4XMiv8?e=8BZ7hf">Video 2</a>
+    </li>
+    <!-- ROW 7 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQDrpEK2_xd0RJ_reSC-PMkUAftr-xxPzAwiLpODdpjNVms?e=E0XHFy" target="_blank">7. Đề Hà Tĩnh</a>
+      <div class="study-session">Ca chiều 1</div>
+      <div class="study-time">T2 27/4<br>1:45-3:15 pm</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQC9A0AnoshEQ5g5MqvG1vNbAXUevvKy51o0FninRku2JKI?e=3f15M9">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+    <!-- ROW 8 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="#" target="_blank">Bổ trợ: Lượng từ 1</a>
+      <div class="study-session">Ca trưa</div>
+      <div class="study-time">T3 28/4<br>12:05 pm</div>
+      <a class="video-link" href="#">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+    <!-- ROW 8 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQAzo6B62G84Qal7ewzcz7MTAQLrmeCu3QQQfkUVeleyrxA?e=6HWPtg" target="_blank">8. Đề Quảng Ninh</a>
+      <div class="study-session">Ca chiều 1</div>
+      <div class="study-time">T4 29/4<br>1:45-3:15 pm</div>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQBdnl8i-qn0Q5fnsaXLk8sKAa4a3_9eb_u5OHn31GYLbC8?e=IEowWa">Video 1</a>
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDPqAuJ-q3BQrXpPDXM6oXxAQHpBq7kmYyN6ohUffj1srE?e=oh64Og">Video 2</a>
+    </li>
+    <!-- ROW 9 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQCXPbDr_YQRTqvpjyLZXLKJAW7zmtgqsniivgVzjWnv-As?e=upu4w6" target="_blank">Live Bổ trợ: Từ loại 1</a>
+      <div class="study-session">Ca trưa</div>
+      <div class="study-time">T5 30/4<br>12:05</div>
+      <a class="video-link" href="#">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+    <!-- ROW 9 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQDOgabM8w6qQoM6RRYGZhMMAdHQMWWSozRFFbinRCl4TG4?e=sApsgT" target="_blank">9. Đề Lào Cai</a>
+      <div class="study-session">Ca chiều 2</div>
+      <div class="study-time">T6 1/5<br>3:30-5:00 pm</div>
+      <a class="video-link" href="#">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+    <!-- ROW 9 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQBFW1aXKitzRLTFAnLkzBMeAdY9BGsFmqdPkUYMrYlwmF0?e=IuUsfv" target="_blank">Live Bổ trợ: Trật tự từ 1</a>
+      <div class="study-session">Ca trưa</div>
+      <div class="study-time">T6 1/5<br>12:05</div>
+      <a class="video-link" href="#">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+    <!-- ROW 10 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQA-BytJbHAuRrZJK3luu-yYAYyVq230oA4lP8Drc2Ui0eE?e=Mq05K4" target="_blank">10. Đề Phú Thọ</a>
+      <div class="study-session">Ca chiều 1</div>
+      <div class="study-time">T2 4/5<br>1:45-3:15 pm</div>
+      <a class="video-link" href="#">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+
+    <!-- ROW 11 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://ketng91.github.io/lopanhthayket_thpt/" target="_blank">Live Bổ trợ: Giới từ 1</a>
+      <div class="study-session">Ca trưa</div>
+      <div class="study-time">T3 5/5<br>12:05</div>
+      <a class="video-link" href="#">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+
+    <!-- ROW 11 -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://1drv.ms/b/c/1f67d43d980925ec/IQBMZTRAcE_nSYyg-KAVTD0XAXGGP3Z5fewXz1mL4GQdyPE?e=uPEakI" target="_blank">11. Đề Quảng Trị</a>
+      <div class="study-session">Ca chiều 1</div>
+      <div class="study-time">T4 6/5<br>1:45-3:15 pm</div>
+      <a class="video-link" href="#">Video 1</a>
+      <a class="video-link" href="#">Video 2</a>
+    </li>
+
+
+
+
+
+
+  </ul>
+
+  <a href="https://ketng91.github.io/lopanhthayket_thpt/" class="back-btn">⬅ Quay về trang chính</a>
+</div>
+
+<footer>
+  © 2026 Lớp Anh thầy Kết. All rights reserved.
+</footer>
+
+</body>
+</html>
